@@ -15,7 +15,7 @@
 
 .todo-app {
     max-width: 40%;
-    width: 50%;
+    width: 100%;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -108,4 +108,29 @@ button.disabled {
     margin-top: 30px;
     width: max-content;
     padding: 5px;
+}
+
+@media (max-width: 1000px){
+    .todo-app {
+        max-width: 60%;
+    }
+
+}
+@media (max-width: 500px){
+    .todo-app {
+        max-width: 85%;
+        padding: 15px;
+    }
+    input{
+        margin: 0;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .btn-add{
+        margin: 20px 0;
+        padding: 5px;
+    }
 }
