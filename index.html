@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo-app">
+                <h2>Habsida To Do List</h2>
+                <div class="row">
+                    <input type="text" id="input-box" />
+                    <button onclick="addList()" class=" btn-add disabled ">Add</button>
+                </div>
+                <div class="list-container">
+                    <ul id="list" class="list-item">
+                        <!-- <li >
+                            <input type="checkbox" class="list-checkbox"  id="input-checkbox"> rirst 
+                            <span class="delete-item"></span>
+                        </li> -->
+                    </ul>
+                </div>
+                <button class="delete disabled" id="btn-delete">Delete selected</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
